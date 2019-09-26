@@ -68,7 +68,36 @@
     let try04 = makeName("Robert","\"Beto\"","O\'Rourke");
     console.log(try04);
 
-    
+    console.log("Making better name function:");
+
+    function makeBetterName(firstName,middleName,lastName) {
+      if (middleName.length === 1) {
+        middleName = middleName + ".";
+        // adding and updating:
+        let fullName = firstName + " " + middleName + " " + lastName;
+        return fullName;
+      } else {
+        let fullName = firstName + " " + middleName + " " + lastName;
+        return fullName;
+      }
+    }
+
+    console.log(makeBetterName("Joan","Marie","Larkin"));
+    console.log(makeBetterName("Donald","F","Trump"));
+    console.log(makeBetterName("Jaewon","재원","Yoo"));
+
+    function theWinner(home,away) {
+      if (home > away)
+      let winner = "The home team won"
+      return winner;
+    } else if(home === away) { 
+      let tie = "It was a tie"
+      return tie;
+    } else (home < away) {
+      let otherWinner = "The away team won"
+      return otherWinner;
+    }
+
 
 
 
