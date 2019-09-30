@@ -86,17 +86,22 @@
     console.log(makeBetterName("Donald","F","Trump"));
     console.log(makeBetterName("Jaewon","재원","Yoo"));
 
-    function theWinner(home,away) {
-      if (home > away)
-      let winner = "The home team won"
-      return winner;
-    } else if(home === away) { 
-      let tie = "It was a tie"
+    function theScore(home,away) {
+      if (home === away) {
+      let tie = "it was a tie"
       return tie;
-    } else (home < away) {
-      let otherWinner = "The away team won"
-      return otherWinner;
+    } else if (home > away) {
+      let home = "the home team won"
+      return home;
+    } else  {
+      let away = "the away team won"
+      return away;
     }
+    }
+
+    console.log(theScore(6,5));
+    console.log(theScore(4,6));
+    console.log(theScore(4,4));
 
 
 
